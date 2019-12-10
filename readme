@@ -27,7 +27,7 @@ api
         修改
 scripts
     test01_login
-        初始化
+        初始 化
         登录测试方法
         提取token，并追加到请求头信息中
         断言
