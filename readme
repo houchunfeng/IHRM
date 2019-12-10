@@ -1,0 +1,45 @@
+人力资源管理系统
+登录和员工管理模块的接口测试
+
+分析：
+api
+    __init__
+        测试服务器的IP地址
+        请求头信息
+    api_login----登录
+        初始化
+            url
+        登录封装
+            data
+            请求登录
+            返回
+
+    api_employee---员工管理
+        初始化
+            新增员工url
+            删除、修改、查询url
+        添加
+            定义data
+            调用post()
+        修改
+        删除
+            调用delete()
+        修改
+scripts
+    test01_login
+        初始化
+        登录测试方法
+        提取token，并追加到请求头信息中
+        断言
+    test02_employee
+        初始化
+        添加
+            调用添加
+            提取id
+            断言
+        删除
+            调用删除
+            断言
+tools
+    assert_common
+        断言的方法
